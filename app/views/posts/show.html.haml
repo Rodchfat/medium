@@ -9,6 +9,10 @@
 %p
   %b Description:
   = @post.description
+  
+%p
+  %b Craeted By:
+  = @post.user.email
 
 = link_to 'Edit', edit_post_path(@post)
 \|

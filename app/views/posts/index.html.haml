@@ -4,6 +4,9 @@
     = image_tag post.image.url(:medium)
     .panel-heading
       = link_to post.title, post
+      %p
+      = post.comments.count
+      Comments
     .panel-footer
       = link_to 'Show', post
       |
